@@ -8,8 +8,6 @@
 #include <string>
 #include <ctype.h>
 #include <sstream>
-//#include "pascal_lexico.cpp"
-//#include "autPasc.cpp"
 
 using namespace std;
 
@@ -105,20 +103,4 @@ void analise::output(string final)//vamos salvar da lista ligada, é melhor
 	}
 	out.write(ch, size);
 }
-
-/*int main()
-{
-	analise tokn;
-	string c = "exemplo";
-	string a = " lista";
-	string p = "parametro";
-	string s = "string";
-	//tokn.start();
-	tokn.inserir(c,p);
-	tokn.inserir(a,s);
-	tokn.inserir(c,s);
-	tokn.inserir(a,p);
-
-	tokn.imprimir();
-}*/
 
