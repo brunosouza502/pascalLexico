@@ -14,15 +14,6 @@
 
 using namespace std;
 
-bool auxToken(analise);
-
-bool auxToken(tokenNo* tkn)
-{
-    if(tkn->tipo == "ID" || tkn->tipo == "PALAVRA RESERVADA" || tkn->tipo == "NUMERO" || tkn->tipo == "SIMBOLO ESPECIAL" || tkn->tipo == "SIMBOLO COMPOSTO")
-        return true;
-    else
-        return false;
-}
 
 void analise::automato(string token, analise tok)
 {
@@ -561,7 +552,6 @@ void tokenizerCode(string code)
 
 void lerArquivo()//lê codigo do arquivo e armazena em uma string
 {
-	int pos = 0;//posição para armazenar em uma string
 	string identificador="";
 	string str = " ";
 	std::ifstream is("teste.txt");
@@ -569,7 +559,6 @@ void lerArquivo()//lê codigo do arquivo e armazena em uma string
 		char c = is.get();
 		if(is.good()){
 			identificador.insert(identificador.end(),c);
-			//pos++;
 		}
 	}
 
