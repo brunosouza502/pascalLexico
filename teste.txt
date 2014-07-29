@@ -1,2 +1,1 @@
-program exemplo: 
-if(i<=2) i:= a(*comments*) 
+program exemplo: if(i<=2) i:= a(*comments*)
